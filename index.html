@@ -2,55 +2,40 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="./main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="shortcut icon" type="image/png" href="list.png" />
+  <link rel="stylesheet" href="style.css">
+  
   <title>To-do List</title>
+  
 </head>
 
 <body>
 
-
+  <main>
     <header>
       <div class="container">
         <div id="header">
           <h2><i class="fas fa-clipboard-check"></i> To-do List</h2>
           <div class="user_input">
-            <form id="forminput">
-                <input 
-                type="text"
-                placeholder="i need to....."
-                id="new-task-input">
-                <input type="submit"
-                id="new-task-submit"
-                value="add task">
-                
+            <input type="text" id="input" placeholder="I need to..."><button id="add_item">Submit</button>
           </div>
         </div>
       </div>
     </header>
-    <main>
-            <section class="tasklist">
-                <h2>My tasks</h2>
-            <div id="to_do_list">  
-                <div class="container">
-                
-                    <div class="content">
-                    <input
-                        type="text"
-                        class="text"
-                        value="a new task"
-                        readonly/></div>
-                </div>
-                <div class="actions">
-                    <button class="edit">Edit</button>
-                    <button class="delete">Delete</button>
-                </div>
-            </div>
-            </section>
-    </main>
+    
+    <section>
+      <div class="container">
+        <div id="to_do_list"></div>
+      </div>
+    </section>
+  </main>  
 
   <script src="script.js"></script>
-  
+
 </body>
 
 </html>
